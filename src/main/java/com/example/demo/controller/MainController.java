@@ -28,8 +28,8 @@ public class MainController {
             produces = MediaType.APPLICATION_JSON_VALUE)
     public User register(@RequestBody UserDto userDto) {
         User user = new User();
-        if (!hzService.checkPassword(user.getPassword()))
-            return null;
+//        if (!hzService.checkPassword(user.getPassword()))
+//            return null;
         user.setLogin(userDto.getLogin());
         user.setPassword(userDto.getPassword());
         user.setBalance(0d);

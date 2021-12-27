@@ -1,0 +1,64 @@
+<!DOCKTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Рулетка</title>
+	<link rel = "stylesheet" href = "Сисс/ryletka.css">
+<script type="text/javascript">
+function r_out01(){
+var ip=[];
+ip[0]="СиСС/КартинОчки/1.gif";
+ip[1]="СиСС/КартинОчки/2.gif";
+
+var ip1=[];
+ip1[0]="Какая жалость. Вы проиграли";
+ip1[1]="Поздравляем! Вы выиграли";
+
+var a=Math.floor(Math.random()*ip.length)
+
+var dat=document.getElementById("qwe");
+dat.src=ip[a];
+
+var dat1=document.getElementById("text");
+dat1.innerText=ip1[a];
+
+};
+</script>
+</head>
+
+
+	<body>
+			<header>
+					
+				<a href="index.html" id="logo">Казиныч</a>
+<div>
+					<nav role="navigation">
+  <ul>
+    <li><a href="#">Главная</a></li>
+    <li><a href="#">Выбор автомата</a>
+      <ul class="dropdown">
+        <li><a href="#">Рулетка</a></li>
+        <li><a href="#">Кубики</a></li>
+      </ul>
+    </li>
+	<li><a href="#">Пополнить счет</a></li>
+    <li><a href="#">О нас</a></li>
+  </ul>
+</nav>
+</div>
+			</header>
+			<article>
+				<div id="bet">Ставка: </div>
+<select id="bet1"> 
+  <option value="100">100</option>
+  <option value="50" selected>50</option>
+  <option value="10">10</option>
+</select>
+
+				<div class="aboba"><img id="qwe" src="СиСС/КартинОчки/igrovoy-avtomat777.jpg"/></div>
+				<div class="play"><input type="button" id="trista" value="Играть" onclick="r_out01()"></div>
+				<div id="text"></div>
+			</article>
+	
+</body>
+</html>

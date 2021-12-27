@@ -1,0 +1,49 @@
+<!DOCKTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Казино</title>
+    <link rel="stylesheet" href="Сисс/Homepage.css">
+</head>
+<body>
+<script>onload = function () {
+
+
+    if (sessionStorage.getItem('id') !== null) {
+        document.getElementById("reg").innerHTML = "Сменить пользователя";
+        document.getElementById("data").innerHTML = '</p>' + sessionStorage.getItem('login') + '</p>' + sessionStorage.getItem('balance');
+        alert(sessionStorage.getItem('login'));
+    }
+
+}
+</script>
+
+<header>
+
+    <a href="index.html" id="logo">Казиныч</a>
+    <a id="data">qwe</a>
+    <div>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Выбор автомата</a>
+                    <ul class="dropdown">
+                        <li><a href="ryletka.html">Рулетка</a></li>
+                        <li><a href="#">Кубики</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Пополнить счет</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<article>
+    <div class="peter">
+        <span>Начни играть прямо сейчас</span>
+        <div class="barsik"><a href="registration.html" id="reg">Регистация</a></div>
+    </div>
+
+</article>
+</body>
+</html>

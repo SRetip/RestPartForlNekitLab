@@ -1,0 +1,36 @@
+<!DOCKTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Регистрация</title>
+	<link rel = "stylesheet" href = "Сисс/registration.css">
+	<script src="action.js"></script>
+</head>
+<body>
+<form onsubmit="registr()">
+  <div class="container">
+    <h1>Регистрация</h1>
+    <p>Заполните все поля, чтобы зарегистрироваться.</p>
+    <hr>
+
+    <label for="login"><b>Логин</b></label>
+    <input type="text" id="log" placeholder="Введите логин" name="login" required>
+
+    <label for="psw"><b>Пароль</b></label>
+    <input type="password" id="pw" placeholder="Введите пароль" name="psw" required>
+
+   
+    
+    <button type="submit" class="registerbtn" onclick="window.location.href = 'mainpage.html';">Зарегистрироваться</button>
+
+  </div>
+</form>
+  <div class="container signin">
+    <p>Уже зарегистрированы? <a href="#">Войти</a>.</p>
+  </div>
+
+<input type="button" onclick="registr()" value="qwe">
+<input type="button" onclick="jopa()" value="qwe2">
+
+</body>
+</html>

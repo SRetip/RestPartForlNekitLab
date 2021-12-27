@@ -10,7 +10,7 @@ public class HzService {
 
     public boolean checkPassword(String password)
     {
-        String pattren = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$";
+        String pattren = ".+";
         return password.matches(pattren);
     }
 }
